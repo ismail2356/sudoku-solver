@@ -71,14 +71,7 @@ python app.py
 4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
 5. Pull Request oluşturun
 
-## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
-
-## 📞 İletişim
-
-- GitHub: [@kullaniciadi](https://github.com/kullaniciadi)
-- E-posta: ornek@email.com
 
 ---
 ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın! 
