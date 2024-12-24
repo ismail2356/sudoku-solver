@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Çözücü</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>{% if solved %}Çözülmüş Sudoku{% else %}Tanınan Rakamlar{% endif %}</h1>
+        
+        <div class="status {% if solved %}solved{% else %}detected{% endif %}">
+            {% if solved %}
+                Sudoku başarıyla çözüldü!
+            {% else %}
+                Rakamlar başarıyla tanındı. Çözmek için butona tıklayın.
+            {% endif %}
+        </div>
+
+        <div class="sudoku-grid">
+            {% for i in range(9) %}
+            <div class="row">
+                {% for j in range(9) %}
+                <div class="cell {% if (i//3 + j//3)%2 == 0 %}dark{% endif %} {% if grid[i][j] != 0 %}filled{% endif %}">
+                    {{ grid[i][j] if grid[i][j] != 0 else '' }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="button-group">
+            {% if not solved %}
+            <form action="/solve" method="post" style="width: 100%;">
+                <button type="submit" class="button solve-button">Sudoku'yu Çöz</button>
+            </form>
+            {% endif %}
+            <a href="/" class="button new-button">Yeni Sudoku</a>
+        </div>
+    </div>
+</body>
+</html>

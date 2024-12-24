@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku Solution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Çözüm</h1>
+        <div class="sudoku-grid">
+            {% for i in range(9) %}
+            <div class="row">
+                {% for j in range(9) %}
+                <div class="cell {% if (i//3 + j//3)%2 == 0 %}dark{% endif %}">
+                    {{ solution[i][j] }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        <a href="/" class="button">Yeni Sudoku</a>
+    </div>
+</body>
+</html>
