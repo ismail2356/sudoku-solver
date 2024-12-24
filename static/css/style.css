@@ -1,4 +1,4 @@
-/* Modern ve temiz tasarım için genel stiller */
+
 body {
     font-family: 'Roboto', sans-serif;
     background: #f0f2f5;
@@ -31,7 +31,7 @@ h1 {
     line-height: 1.6;
 }
 
-/* Dosya yükleme alanı */
+
 .upload-area {
     border: 2px dashed #1a73e8;
     padding: 2rem;
@@ -63,7 +63,7 @@ h1 {
     font-weight: 500;
 }
 
-/* Sudoku ızgarası */
+
 .sudoku-grid {
     display: inline-block;
     margin: 2rem 0;
@@ -117,7 +117,7 @@ h1 {
     font-weight: 700;
 }
 
-/* Butonlar */
+
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -156,7 +156,7 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* Durum mesajları */
+
 .status {
     padding: 1rem;
     margin: 1rem 0;
@@ -182,7 +182,7 @@ h1 {
     margin-top: 1.5rem;
 }
 
-/* Responsive tasarım */
+
 @media (max-width: 600px) {
     .container {
         margin: 1rem;
