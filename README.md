@@ -4,6 +4,17 @@
 
 A web application powered by artificial intelligence designed to solve Sudoku puzzles. The application automatically recognizes numbers from uploaded Sudoku images and provides solutions.
 
+## 📸 Project Screenshots
+
+### Homepage
+![Homepage](images/images_1.png)
+
+### Sudoku Recognition
+![Sudoku Recognition](images/images_2.png)
+
+### Solution Result
+![Solution Result](images/images_3.png)
+
 ## 🚀 Features
 
 - 📸 Automatic number recognition from Sudoku photos
@@ -86,6 +97,17 @@ python app.py
 
 Sudoku bulmacalarını çözmek için geliştirilmiş, yapay zeka destekli bir web uygulaması. Uygulama, yüklenen Sudoku görüntüsündeki rakamları tanıyarak otomatik çözüm sunar.
 
+## 📸 Proje Resimleri
+
+### Ana Sayfa
+![Ana Sayfa](images/images_1.png)
+
+### Sudoku Tanıma
+![Sudoku Tanıma](images/images_2.png)
+
+### Çözüm Sonucu
+![Çözüm Sonucu](images/images_3.png)
+
 ## 🚀 Özellikler
 
 - 📸 Sudoku fotoğrafından otomatik rakam tanıma
@@ -146,15 +168,6 @@ python app.py
 - OpenCV 4.5.3
 - NumPy 1.19.5
 - Pillow 8.3.1
-
-## 🤝 Katkıda Bulunma
-
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: Açıklama'`)
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
-5. Pull Request oluşturun
-
 
 
 ---

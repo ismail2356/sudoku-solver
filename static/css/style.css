@@ -1,4 +1,4 @@
-
+/* Modern ve temiz tasarım için genel stiller */
 body {
     font-family: 'Roboto', sans-serif;
     background: #f0f2f5;
@@ -31,7 +31,7 @@ h1 {
     line-height: 1.6;
 }
 
-
+/* Dosya yükleme alanı */
 .upload-area {
     border: 2px dashed #1a73e8;
     padding: 2rem;
@@ -63,7 +63,7 @@ h1 {
     font-weight: 500;
 }
 
-
+/* Sudoku ızgarası */
 .sudoku-grid {
     display: inline-block;
     margin: 2rem 0;
@@ -79,14 +79,7 @@ h1 {
     margin: 0;
 }
 
-.row:first-child .cell {
-    border-top: 2px solid #1a73e8;
-}
-
-.row:last-child .cell {
-    border-bottom: 2px solid #1a73e8;
-}
-
+/* Her 3. hücrede kalın siyah çizgi */
 .cell {
     width: 45px;
     height: 45px;
@@ -100,12 +93,34 @@ h1 {
     transition: background-color 0.2s;
 }
 
-.cell:first-child {
-    border-left: 2px solid #1a73e8;
+/* 3'lü grupların sağ kenarı */
+.cell:nth-child(3n) {
+    border-right: 2px solid #000;
 }
 
+/* 3'lü grupların alt kenarı */
+.row:nth-child(3n) .cell {
+    border-bottom: 2px solid #000;
+}
+
+/* En sağdaki hücrelerin sağ kenarı */
 .cell:last-child {
-    border-right: 2px solid #1a73e8;
+    border-right: 2px solid #000;
+}
+
+/* En alttaki hücrelerin alt kenarı */
+.row:last-child .cell {
+    border-bottom: 2px solid #000;
+}
+
+/* En üstteki hücrelerin üst kenarı */
+.row:first-child .cell {
+    border-top: 2px solid #000;
+}
+
+/* En soldaki hücrelerin sol kenarı */
+.cell:first-child {
+    border-left: 2px solid #000;
 }
 
 .cell.dark {
@@ -117,7 +132,7 @@ h1 {
     font-weight: 700;
 }
 
-
+/* Butonlar */
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -156,7 +171,7 @@ h1 {
     transform: translateY(-1px);
 }
 
-
+/* Durum mesajları */
 .status {
     padding: 1rem;
     margin: 1rem 0;
@@ -182,7 +197,7 @@ h1 {
     margin-top: 1.5rem;
 }
 
-
+/* Responsive tasarım */
 @media (max-width: 600px) {
     .container {
         margin: 1rem;
